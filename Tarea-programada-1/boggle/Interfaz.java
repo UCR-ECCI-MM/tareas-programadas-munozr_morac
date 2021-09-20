@@ -15,9 +15,11 @@ public class Interfaz extends JOptionPane
     /**
      * Constructor for objects of class Interfaz
      */
-    public Interfaz()
+    public Interfaz(String elTitulo, String elNombreArchivoImagen)
     {
         // initialise instance variables
+        TITULO = elTitulo;
+        IMAGEN = new ImageIcon(this.getClass().getResource(elNombreArchivoImagen));
         
     }
 
@@ -27,9 +29,9 @@ public class Interfaz extends JOptionPane
      * @param  y   a sample parameter for a method
      * @return     the sum of x and y 
      */
-    public int sampleMethod(int y)
+    public void sampleMethod()
     {
         // put your code here
-        return x + y;
+        
     }
 }
