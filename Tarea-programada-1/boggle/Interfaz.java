@@ -29,9 +29,11 @@ public class Interfaz extends JOptionPane
      * @param  y   a sample parameter for a method
      * @return     the sum of x and y 
      */
-    public void sampleMethod()
+    public void decirMensaje(String mensaje)
     {
         // put your code here
-        
+        this.showMessageDialog(null, mensaje, TITULO, PLAIN_MESSAGE, IMAGEN);
     }
+    
+    
 }
