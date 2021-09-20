@@ -45,4 +45,13 @@ public class Interfaz extends JOptionPane
         return hilera;
     }
     
+    /**
+     * 
+     */
+    public int pedirOpcion(String[] opciones, String mensaje)
+    {
+        int opcionSelecionada;
+        opcionSelecionada = this.showOptionDialog(null, mensaje, TITULO, DEFAULT_OPTION, PLAIN_MESSAGE, IMAGEN, opciones, null);
+        return opcionSelecionada;
+    }
 }
