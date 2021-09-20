@@ -35,5 +35,14 @@ public class Interfaz extends JOptionPane
         this.showMessageDialog(null, mensaje, TITULO, PLAIN_MESSAGE, IMAGEN);
     }
     
+    /** Metodo.. 
+     * 
+     */
+    public String pedirHilera(String mensaje)
+    {
+        String hilera; 
+        hilera = this.showInputDialog(null, mensaje, TITULO, PLAIN_MESSAGE);
+        return hilera;
+    }
     
 }
