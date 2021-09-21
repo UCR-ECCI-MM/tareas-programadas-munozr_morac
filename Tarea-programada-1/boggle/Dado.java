@@ -15,6 +15,8 @@ public class Dado
      */
     public Dado()
     {
+        //Atributos de la clase.
+        //Contiene las 6 caras del dado. 
         carasDado = new ArrayList<String>();
         
     }

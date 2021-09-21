@@ -1,6 +1,10 @@
 #BlueJ class context
 comment0.target=Arbitro
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Arbitro\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ M\u00E9todo\ que\ se\ encarga\ de\ considerar\ las\ reglas\ del\ juego\ y\ evaluar\ la\ partida.\ \r\n\r\n\ @author\ Kyara\ Mu\u00F1oz\r\n\ @author\ Pablo\ Mora\r\n
 comment1.params=
-comment1.target=void\ jugar()
-numComments=2
+comment1.target=Arbitro()
+comment1.text=\r\n\ Contructor\ de\ la\ clase.\r\n
+comment2.params=
+comment2.target=void\ jugar()
+comment2.text=\r\n\ M\u00E9todo\ que\ evalua\ la\ partida.\ \r\n
+numComments=3

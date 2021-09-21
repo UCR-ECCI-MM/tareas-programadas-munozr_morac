@@ -1,8 +1,11 @@
 #BlueJ class context
 comment0.target=Controlador
+comment0.text=\r\n\ Se\ encarga\ de\ manejar\ la\ funcionalidad\ general\ del\ programa.\ \r\n\ \r\n\ @author\ Kyara\ Mu\u00F1oz\r\n\ @author\ Pablo\ Mora\r\n
 comment1.params=
 comment1.target=Controlador()
-comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Controlador\r\n
+comment1.text=\r\n\ Constructor\ de\ la\ clase.\ \r\n
 comment2.params=
-comment2.target=void\ opcionMenu()
-numComments=3
+comment2.target=void\ iniciar()
+comment3.params=parametros
+comment3.target=void\ main(java.lang.String[])
+numComments=4

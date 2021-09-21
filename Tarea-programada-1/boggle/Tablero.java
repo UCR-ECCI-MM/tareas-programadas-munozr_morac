@@ -1,16 +1,20 @@
 
 /**
- * Write a description of class Tablero here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * Esta clase representa un dado. 
+ * 
+ * @author Kyara Muñoz
+ * @author Pablo Mora
  */
-public class Tablero {    
-    // instance variables - replace the example below with your own    
+ 
+public class Tablero {       
+    //Atributos de la clase
     String [][] letrasTablero;     
-       
-    public Tablero()    {        
-        // initialise instance variables        
+    
+    /*
+     * Constructor de la clase. 
+     */
+    public Tablero() {        
+        // Constructor de la clase        
         letrasTablero = new String[4][4];    
     }
 }

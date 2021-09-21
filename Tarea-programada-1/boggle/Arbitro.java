@@ -1,12 +1,26 @@
 
 /**
- * Write a description of class Arbitro here.
+ * Método que se encarga de considerar las reglas del juego y evaluar la partida. 
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Kyara Muñoz
+ * @author Pablo Mora
  */
 public class Arbitro
 {
+    //Atributos de la clase
+    
+
+    /**
+     * Contructor de la clase.
+     */
+    public Arbitro()
+    {
+        
+    }
+    
+    /**
+     * Método que evalua la partida. 
+     */
     public void jugar() {
         
     }
