@@ -10,7 +10,7 @@ public class Controlador
     // instance variables - replace the example below with your own
     private final String TITULO_VENTANA = "Bogle";
     private final String NOMBRE_IMAGEN = "mono.png";
-    private final String MENSAJE = "Seleccione la acción que desea realizar";
+    private final String MENSAJE = "Seleccione la acción que desea realizar"; 
     private final String[] OPCIONES = {"Jugar","Ver créditos", "Ayuda", "Salir"};
     private Interfaz interfaz;
     //private Arbitro arbitro;
@@ -20,6 +20,7 @@ public class Controlador
      */
     public Controlador()
     {
+         
         interfaz = new Interfaz(TITULO_VENTANA, NOMBRE_IMAGEN);
         //arbitro = new Arbitro();
         
@@ -36,5 +37,12 @@ public class Controlador
     {
         // put your code here
         
+    }
+    
+    public static void main(String[] parametros)
+    {
+        Controlador controlador;
+        controlador = new Controlador();
+        controlador.iniciar();
     }
 }
