@@ -13,15 +13,21 @@ public class Arbitro
     /**
      * Contructor de la clase.
      */
-    public Arbitro()
+    public Arbitro() //Debe recibir el tablero
     {
-        
+        //crear interfaz 
     }
     
     /**
      * Método que evalua la partida. 
      */
     public void jugar() {
+        //rovolver tablero -llamar metodo de tablero-. 
+        //mostrar tablero.
+        //repetir 
+            //preguntar palabra.
+            //validar palabra.
+            //Decir si es valida. 
         
     }
 }

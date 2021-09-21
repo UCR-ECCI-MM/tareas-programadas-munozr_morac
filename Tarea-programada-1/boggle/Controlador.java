@@ -26,9 +26,9 @@ public class Controlador
      */
     public Controlador()
     {
-         
         interfaz = new Interfaz(TITULO_VENTANA, NOMBRE_IMAGEN);
         arbitro = new Arbitro();
+        // Crear tablero, crear interfaz, crear arbitro(mandandole el tablero).
     }
     
     public void iniciar()

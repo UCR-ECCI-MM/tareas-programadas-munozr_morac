@@ -8,13 +8,18 @@
  
 public class Tablero {       
     //Atributos de la clase
-    String [][] letrasTablero;     
+    String [][] letrasTablero;    // debe ser de tipo dado.
+    
+
     
     /*
      * Constructor de la clase. 
      */
     public Tablero() {        
         // Constructor de la clase        
-        letrasTablero = new String[4][4];    
+        letrasTablero = new String[4][4];  // inicializar  
+        // Crear 16 dados 
     }
+    
+    //metodo revolver
 }
