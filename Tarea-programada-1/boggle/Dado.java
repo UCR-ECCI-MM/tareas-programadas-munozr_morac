@@ -77,10 +77,10 @@ public class Dado
     }
     
     /**
-     * No está permitido por java. 
-     *
+     * 
+     */
     public void setCarasDado(char[] nuevasCaras){
         carasDado = nuevasCaras; 
     }
-    */
+    
 }
