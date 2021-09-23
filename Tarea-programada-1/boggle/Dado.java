@@ -39,4 +39,48 @@ public class Dado
        caraVisible = carasDado[generador.nextInt(6)];
      }
     
+    //Getter 
+    /**
+     * 
+     */
+    public char getCaraVisible(){
+        return caraVisible;
+    }
+    
+    /**
+     * 
+     */
+    public char getUnaCara(int numeroCara){
+        return carasDado[numeroCara];
+    }
+    
+    /**
+     * 
+     */
+    public char[] getCarasDado() {
+        return carasDado;
+    }
+    
+    //Setter
+    /**
+     * 
+     */
+    public void setCaraVisible(int nuevaCaraVisible){
+        caraVisible = carasDado[nuevaCaraVisible];
+    }
+    
+    /**
+     * 
+     */
+    public void setUnaCara(int numeroCara, char nuevaCara){
+        carasDado[numeroCara] = nuevaCara;
+    }
+    
+    /**
+     * No está permitido por java. 
+     *
+    public void setCarasDado(char[] nuevasCaras){
+        carasDado = nuevasCaras; 
+    }
+    */
 }
