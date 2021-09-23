@@ -32,12 +32,11 @@ public class Dado
     }
     
     /**
-     * 
+     * Método que permite elegir una cara del dado de forma aleatoria. 
      */
-
     
     public void tirarDado() {
-       
+       caraVisible = carasDado[generador.nextInt(6)];
      }
     
 }
