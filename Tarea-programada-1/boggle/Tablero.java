@@ -54,7 +54,7 @@ public class Tablero {
         String hilera = "";
         for (int fila = 0; fila < matrizDados.length; fila++) {
             for (int columna = 0; columna < matrizDados[fila].length; columna++) {
-                hilera = hilera + matrizDados[fila][columna].getCaraVisible() + " ";
+                hilera = hilera + matrizDados[fila][columna].getCaraVisible() + "     ";
             }
             hilera = hilera + "\n";
         }
