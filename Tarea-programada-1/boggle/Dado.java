@@ -12,6 +12,7 @@ public class Dado
     private char caraVisible;
     private Random generador;
     private final int CANTIDAD_CARAS = 6;
+    private ArrayList<String> carasDado;
 
     /**
      * Constructor para objetos de la clase Dado
