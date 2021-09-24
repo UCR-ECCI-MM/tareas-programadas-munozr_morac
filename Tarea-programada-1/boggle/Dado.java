@@ -1,86 +1,88 @@
 import java.util.ArrayList; 
 import java.util.Random;
 /**
- * Esta clase representa un dado. 
+ * Esta clase representa un dado del juego. 
  * 
  * @author Kyara Muñoz
  * @author Pablo Mora
  */
 public class Dado
 {
-    // 
-    private char[] carasDado;
+    // Atributos de la clase.
+    private char[] carasDado; //Contiene las 6 caras del dado. 
     private char caraVisible;
     private Random generador;
 
     /**
-     * Constructor de la clase Dados. 
+     * Constructor para objetos de la clase Dado. 
      */
     public Dado()
     {
         generador = new Random();
         carasDado = new char[6];
-        for(int indice = 0; indice<6; indice++) {
-            carasDado[indice] = (char)(65 + generador.nextInt(26));
+        for(int indice = 0; indice < 6; indice++) {
+            carasDado[indice] = (char)(65 + generador.nextInt(26)); // Asigna aleatoriamente las caras, ascii 65(A) a 90(Z)
         }
-        caraVisible = carasDado[generador.nextInt(6)];
-        //Atributos de la clase.
-        //Contiene las 6 caras del dado. 
-        //carasDado = new ArrayList<String>(); //Inicializar el arreglo. // Asignar aleatoriamente las caras //¿Cambiar a char?
-        //caraVisible ->Forzosamente se le debe asignar un valor. La profe prefiere que sea una cara aleatoria por facilidad. 
-        // ascii 65(A) a 90(Z)
+        caraVisible = carasDado[generador.nextInt(6)]; // Se asigna una de las 6 caras aleatoriamente
     }
     
+    //Getters
     /**
-     * Método que permite elegir una cara del dado de forma aleatoria. 
-     */
-    
-    public void tirarDado() {
-       caraVisible = carasDado[generador.nextInt(6)];
-     }
-    
-    //Getter 
-    /**
-     * 
+     * Retorna el atributo caraVisible del dado
+     * @return cara visible del dado
      */
     public char getCaraVisible(){
         return caraVisible;
     }
     
     /**
-     * 
-     */
-    public char getUnaCara(int numeroCara){
-        return carasDado[numeroCara];
-    }
-    
-    /**
-     * 
+     * Retorna el atributo carasDado del dado
+     * @return vector que almacena las caras del dado
      */
     public char[] getCarasDado() {
         return carasDado;
     }
     
-    //Setter
     /**
-     * 
+     * Retorna la letra de la cara recibida
+     * @param numeroCara número de cara a consultar
+     * @return letra de una de las caras del dado
      */
-    public void setCaraVisible(int nuevaCaraVisible){
-        caraVisible = carasDado[nuevaCaraVisible];
+    public char getUnaCara(int numeroCara){
+        return carasDado[numeroCara];
+    }
+    
+    //Setters
+    /**
+     * Sobreescribe la cara visible del dado
+     * @param caraVisible la nueva cara visible del dado
+     */
+    public void setCaraVisible(char caraVisible){
+        this.caraVisible = caraVisible;
     }
     
     /**
-     * 
+     * Sobreescribe el vector de caras del dado
+     * @param carasDado el nuevo vector de caras del dado
+     */
+    public void setCarasDado(char[] carasDado){
+        this.carasDado = carasDado; 
+    }
+    
+    /**
+     * Sobreescribe la letra de una de las caras del dado
+     * @param numeroCara posición del vector de una cara del dado
+     * @param nuevaCara nuevo caracter a sobreescribir en la posición numeroCara recibido
      */
     public void setUnaCara(int numeroCara, char nuevaCara){
         carasDado[numeroCara] = nuevaCara;
     }
     
-    /**
-     * 
-     */
-    public void setCarasDado(char[] nuevasCaras){
-        carasDado = nuevasCaras; 
-    }
     
+    /**
+     * Sobreescribe la cara visible del dado con la letra de una cara aleatoria del dado. 
+     */
+    public void tirarDado() {
+       caraVisible = carasDado[generador.nextInt(6)];
+     }
 }
