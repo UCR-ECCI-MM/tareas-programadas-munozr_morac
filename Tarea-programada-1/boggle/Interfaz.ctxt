@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Interfaz
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Interfaz\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=elTitulo\ elNombreArchivoImagen
+comment1.target=Interfaz(java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Interfaz\r\n
+comment2.params=mensaje
+comment2.target=void\ decirMensaje(java.lang.String)
+comment2.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\ \r\n\ @param\ \ y\ \ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ \ the\ sum\ of\ x\ and\ y\ \r\n
+comment3.params=mensaje
+comment3.target=java.lang.String\ pedirHilera(java.lang.String)
+comment3.text=\ Metodo..\ \r\n\ \r\n
+comment4.params=opciones\ mensaje
+comment4.target=int\ pedirOpcion(java.lang.String[],\ java.lang.String)
+comment4.text=\r\n\ \r\n
+numComments=5
