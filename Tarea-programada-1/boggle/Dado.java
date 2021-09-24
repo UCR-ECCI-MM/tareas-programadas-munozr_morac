@@ -1,26 +1,26 @@
-import java.util.ArrayList; 
 import java.util.Random;
 /**
- * Esta clase representa un dado del juego. 
+ * Esta clase representa un dado del juego 
  * 
  * @author Kyara Muñoz
  * @author Pablo Mora
  */
 public class Dado
 {
-    // Atributos de la clase.
-    private char[] carasDado; //Contiene las 6 caras del dado. 
+    // Atributos de la clase
+    private char[] carasDado; //Contiene las 6 caras del dado
     private char caraVisible;
     private Random generador;
+    private final int CANTIDAD_CARAS = 6;
 
     /**
-     * Constructor para objetos de la clase Dado. 
+     * Constructor para objetos de la clase Dado
      */
     public Dado()
     {
         generador = new Random();
-        carasDado = new char[6];
-        for(int indice = 0; indice < 6; indice++) {
+        carasDado = new char[CANTIDAD_CARAS];
+        for(int indice = 0; indice < CANTIDAD_CARAS; indice++) {
             carasDado[indice] = (char)(65 + generador.nextInt(26)); // Asigna aleatoriamente las caras, ascii 65(A) a 90(Z)
         }
         caraVisible = carasDado[generador.nextInt(6)]; // Se asigna una de las 6 caras aleatoriamente
@@ -80,7 +80,7 @@ public class Dado
     
     
     /**
-     * Sobreescribe la cara visible del dado con la letra de una cara aleatoria del dado. 
+     * Sobreescribe la cara visible del dado con la letra de una cara aleatoria del dado
      */
     public void tirarDado() {
        caraVisible = carasDado[generador.nextInt(6)];
