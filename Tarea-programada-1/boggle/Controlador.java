@@ -36,11 +36,12 @@ public class Controlador
         int opcionMenu = 0;
         
         while (opcionMenu != 3) {
-        opcionMenu = interfaz.pedirOpcion(OPCIONES, MENSAJE);
-        
+            opcionMenu = interfaz.pedirOpcion(OPCIONES, MENSAJE);
+            
             switch (opcionMenu) {
                 case 0:
-                    arbitro.jugar(); 
+                    arbitro.jugar();
+                    interfaz.decirMensaje("Escogió la opción 1.Jugar");
                     break;
                 case 1:
                     interfaz.decirMensaje(CREDITOS);
@@ -57,7 +58,6 @@ public class Controlador
         }
     }
     
-
     
     public static void main(String[] parametros)
     {
