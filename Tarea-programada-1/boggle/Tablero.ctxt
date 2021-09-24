@@ -1,15 +1,19 @@
 #BlueJ class context
 comment0.target=Tablero
-comment0.text=\r\n\ Esta\ clase\ representa\ el\ tablero\ del\ juego\ con\ los\ dados\ \r\n\ \r\n\ @author\ Kyara\ Mu\u00F1oz\r\n\ @author\ Pablo\ Mora\r\n
+comment0.text=\r\n\ Esta\ clase\ representa\ el\ tablero\ del\ juego\ con\ los\ dados.\ \r\n\ \r\n\ @author\ Kyara\ Mu\u00F1oz\r\n\ @author\ Pablo\ Mora\r\n
 comment1.params=
 comment1.target=Tablero()
-comment1.text=\r\n\ Constructor\ para\ objetos\ de\ la\ clase\ Tablero\r\n
+comment1.text=\r\n\ Constructor\ para\ objetos\ de\ la\ clase\ Tablero.\r\n
 comment2.params=
-comment2.target=Dado[][]\ getMatrizDados()
-comment3.params=matrizDados
-comment3.target=void\ setMatrizDados(Dado[][])
+comment2.target=void\ agitarTablero()
+comment2.text=\r\n\ Cambia\ de\ forma\ aleatoria\ la\ posici\u00F3n\ de\ los\ dados\ y\ la\ cara\ visible.\ \u0000\r\n
+comment3.params=
+comment3.target=java.lang.String\ toString()
+comment3.text=\r\n\ Muestra\ en\ pantalla\ una\ hilera\ con\ el\ tablero.\ \u0000\r\n
 comment4.params=
-comment4.target=void\ agitarTablero()
-comment5.params=
-comment5.target=java.lang.String\ toString()
+comment4.target=Dado[][]\ getMatrizDados()
+comment4.text=\r\n\ Retorna\ el\ atributo\ matrizDados()\ del\ tablero.\ \r\n\ @return\ matriz\ que\ almacena\ los\ dados.\ \r\n
+comment5.params=matrizDados
+comment5.target=void\ setMatrizDados(Dado[][])
+comment5.text=\r\n\ Sobreescribe\ la\ matriz\ de\ dados.\ \r\n
 numComments=6
