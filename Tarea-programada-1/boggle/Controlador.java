@@ -20,6 +20,7 @@ public class Controlador
     private final String ERROR_MENU = "Opción inválida, vuelva a escoger.";
     private Interfaz interfaz;
     private Arbitro arbitro;
+    private Tablero tablero;
     
     /**
      * Constructor de la clase. 
@@ -27,8 +28,8 @@ public class Controlador
     public Controlador()
     {
         interfaz = new Interfaz(TITULO_VENTANA, NOMBRE_IMAGEN);
-        arbitro = new Arbitro();
-        // Crear tablero, crear interfaz, crear arbitro(mandandole el tablero).
+        tablero = new Tablero();
+        arbitro = new Arbitro(tablero);
     }
     
     public void iniciar()
@@ -41,7 +42,6 @@ public class Controlador
             switch (opcionMenu) {
                 case 0:
                     arbitro.jugar();
-                    interfaz.decirMensaje("Escogió la opción 1.Jugar");
                     break;
                 case 1:
                     interfaz.decirMensaje(CREDITOS);
