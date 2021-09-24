@@ -8,7 +8,6 @@
 public class Arbitro
 {
     //Atributos de la clase
-    
 
     /**
      * Contructor de la clase.
