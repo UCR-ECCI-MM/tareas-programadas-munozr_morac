@@ -6,5 +6,5 @@ comment1.target=Arbitro(Tablero)
 comment1.text=\r\n\ Contructor\ de\ la\ clase\ Arbitro.\r\n@param\ tablero\ El\ objeto\ de\ la\ clase\ tablero.\ \ \r\n
 comment2.params=
 comment2.target=void\ jugar()
-comment2.text=\r\n\ M\u00E9todo\ que\ evalua\ la\ partida.\ \r\n
+comment2.text=\r\n\ M\u00E9todo\ que\ muestra\ el\ men\u00FA\ del\ juego.\ \r\n
 numComments=3
