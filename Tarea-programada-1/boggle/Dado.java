@@ -1,6 +1,6 @@
 import java.util.Random;
 /**
- * Esta clase representa un dado del juego. 
+ * Esta clase representa un dado del juego con una letra en cada cara. 
  * 
  * @author Kyara Muñoz
  * @author Pablo Mora
@@ -36,7 +36,7 @@ public class Dado
     //Getters
     /**
      * Retorna el atributo caraVisible del dado.
-     * @return Cara visible del dado.
+     * @return cara visible del dado.
      */
     public char getCaraVisible(){
         return caraVisible;
@@ -44,7 +44,7 @@ public class Dado
     
     /**
      * Retorna el atributo carasDado del dado.
-     * @return Vector que almacena las caras del dado.
+     * @return vector que almacena las caras del dado.
      */
     public char[] getCarasDado() {
         return carasDado;
