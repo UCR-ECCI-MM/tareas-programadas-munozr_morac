@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Dado
-comment0.text=\r\n\ Esta\ clase\ representa\ un\ dado\ del\ juego.\ \r\n\ \r\n\ @author\ Kyara\ Mu\u00F1oz\r\n\ @author\ Pablo\ Mora\r\n
+comment0.text=\r\n\ Esta\ clase\ representa\ un\ dado\ del\ juego\ con\ una\ letra\ en\ cada\ cara.\ \r\n\ \r\n\ @author\ Kyara\ Mu\u00F1oz\r\n\ @author\ Pablo\ Mora\r\n
 comment1.params=
 comment1.target=Dado()
 comment1.text=\r\n\ Constructor\ para\ objetos\ de\ la\ clase\ Dado.\r\n
@@ -9,10 +9,10 @@ comment2.target=void\ tirarDado()
 comment2.text=\r\n\ Sobreescribe\ la\ cara\ visible\ del\ dado\ con\ el\ car\u00E1cter\ de\ una\ cara\ aleatoria\ del\ dado.\r\n
 comment3.params=
 comment3.target=char\ getCaraVisible()
-comment3.text=\r\n\ Retorna\ el\ atributo\ caraVisible\ del\ dado.\r\n\ @return\ Cara\ visible\ del\ dado.\r\n
+comment3.text=\r\n\ Retorna\ el\ atributo\ caraVisible\ del\ dado.\r\n\ @return\ cara\ visible\ del\ dado.\r\n
 comment4.params=
 comment4.target=char[]\ getCarasDado()
-comment4.text=\r\n\ Retorna\ el\ atributo\ carasDado\ del\ dado.\r\n\ @return\ Vector\ que\ almacena\ las\ caras\ del\ dado.\r\n
+comment4.text=\r\n\ Retorna\ el\ atributo\ carasDado\ del\ dado.\r\n\ @return\ vector\ que\ almacena\ las\ caras\ del\ dado.\r\n
 comment5.params=numeroCara
 comment5.target=char\ getUnaCara(int)
 comment5.text=\r\n\ Retorna\ el\ car\u00E1cter\ de\ la\ cara\ recibida.\r\n\ @param\ numeroCara\ N\u00FAmero\ de\ cara\ a\ consultar.\r\n\ @return\ Car\u00E1cter\ de\ una\ de\ las\ caras\ del\ dado.\r\n
