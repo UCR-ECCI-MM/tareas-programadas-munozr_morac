@@ -7,19 +7,19 @@
  */
 public class Nodo
 {
-    private Usuario usuario;
+    private Persona persona;
     private Nodo siguiente;
     
-    public Nodo(Usuario usuario) {
-        this.usuario = usuario;
+    public Nodo(Persona persona) {
+        this.persona = persona;
     }
     
-    public Usuario getUsuario() {
-        return usuario;
+    public Persona getpersona() {
+        return persona;
     }
     
-    public void setUsuario(Usuario usuario) {
-        this.usuario = usuario;
+    public void setpersona(Persona persona) {
+        this.persona = persona;
     }
     
     public Nodo getSiguiente() {
@@ -31,6 +31,6 @@ public class Nodo
     }
     
     public String toString() {
-        return usuario.toString();
+        return persona.toString();
     }
 }
