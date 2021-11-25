@@ -42,6 +42,6 @@ public class Persona
     }
     
     public String toString() {
-        return nombre + " cumple el " + dia + "/" + mes;
+        return nombre + "\n" + dia + "\n" + mes + "\nFin";
     }
 }

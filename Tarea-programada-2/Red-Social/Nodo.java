@@ -9,16 +9,17 @@ public class Nodo
 {
     private Persona persona;
     private Nodo siguiente;
+    private Nodo anterior;
     
     public Nodo(Persona persona) {
         this.persona = persona;
     }
     
-    public Persona getpersona() {
+    public Persona getPersona() {
         return persona;
     }
     
-    public void setpersona(Persona persona) {
+    public void setPersona(Persona persona) {
         this.persona = persona;
     }
     
@@ -28,6 +29,14 @@ public class Nodo
     
     public void setSiguiente(Nodo siguiente) {
         this.siguiente = siguiente;
+    }
+    
+    public Nodo getAnterior() {
+        return anterior;
+    }
+    
+    public void setAnterior(Nodo anterior) {
+        this.anterior = anterior;
     }
     
     public String toString() {
