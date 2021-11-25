@@ -72,7 +72,7 @@ public class Lista
         String hilera = "";
         
         while (nodoAuxiliar != null) {
-            hilera += nodoAuxiliar.getPersona().getNombre() + "\n" + nodoAuxiliar.getPersona().getDia() + "\n" + nodoAuxiliar.getPersona().getMes() + "\nFin\n";
+            hilera += nodoAuxiliar.getPersona().toString();
             nodoAuxiliar = nodoAuxiliar.getSiguiente();
         }
         
