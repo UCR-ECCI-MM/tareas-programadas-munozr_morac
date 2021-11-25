@@ -31,40 +31,63 @@ public class Lista
         this.ultimo = ultimo;
     }
     
-    public void agregarPersona(Persona nuevaPersona) {
-        Nodo nodoNuevo = new Nodo(nuevaPersona);
+    public boolean verificarExistencia(String nombre) {
+        Nodo nodoAuxiliar = primero;
+        boolean existe = false;
         
-        if (primero == null) {
-            primero = nodoNuevo;
-            ultimo = nodoNuevo;
-        } else {
-            if (nodoNuevo.getPersona().getNombre().compareTo(primero.getPersona().getNombre()) < 0) {
-                primero.setAnterior(nodoNuevo);
-                nodoNuevo.setSiguiente(primero);
+        while (nodoAuxiliar != null) {
+            if (nombre.compareTo(nodoAuxiliar.getPersona().getNombre()) == 0) {
+                existe = true;
+                nodoAuxiliar = null;
+            }
+        }
+        
+        return existe;
+    }
+    
+    
+    
+    public boolean agregarPersona(Persona nuevaPersona) {
+        boolean agregado = false;
+        
+        if (verificarExistencia(nuevaPersona.getNombre()) == false) {
+            agregado = true;
+            Nodo nodoNuevo = new Nodo(nuevaPersona);
+        
+            if (primero == null) {
                 primero = nodoNuevo;
+                ultimo = nodoNuevo;
             } else {
-                if (nodoNuevo.getPersona().getNombre().compareTo(ultimo.getPersona().getNombre()) > 0) {
-                    ultimo.setSiguiente(nodoNuevo);
-                    nodoNuevo.setAnterior(ultimo);
-                    ultimo = nodoNuevo;
+                if (nodoNuevo.getPersona().getNombre().compareTo(primero.getPersona().getNombre()) < 0) {
+                    primero.setAnterior(nodoNuevo);
+                    nodoNuevo.setSiguiente(primero);
+                    primero = nodoNuevo;
                 } else {
-                    Nodo nodoAuxiliar = primero;
-            
-                    while (nodoAuxiliar != ultimo) {
-                        if (nodoAuxiliar.getPersona().getNombre().compareTo(nodoNuevo.getPersona().getNombre()) <= 0 
-                        && nodoNuevo.getPersona().getNombre().compareTo(nodoAuxiliar.getSiguiente().getPersona().getNombre()) <= 0) {
-                            nodoNuevo.setAnterior(nodoAuxiliar);
-                            nodoNuevo.setSiguiente(nodoAuxiliar.getSiguiente());
-                            nodoAuxiliar.setSiguiente(nodoNuevo);
-                            nodoAuxiliar.getSiguiente().setAnterior(nodoNuevo);
-                            nodoAuxiliar = ultimo;
-                        } else {
-                            nodoAuxiliar = nodoAuxiliar.getSiguiente();
+                    if (nodoNuevo.getPersona().getNombre().compareTo(ultimo.getPersona().getNombre()) > 0) {
+                        ultimo.setSiguiente(nodoNuevo);
+                        nodoNuevo.setAnterior(ultimo);
+                        ultimo = nodoNuevo;
+                    } else {
+                        Nodo nodoAuxiliar = primero;
+                
+                        while (nodoAuxiliar != ultimo) {
+                            if (nodoAuxiliar.getPersona().getNombre().compareTo(nodoNuevo.getPersona().getNombre()) < 0 
+                            && nodoNuevo.getPersona().getNombre().compareTo(nodoAuxiliar.getSiguiente().getPersona().getNombre()) < 0) {
+                                nodoNuevo.setAnterior(nodoAuxiliar);
+                                nodoNuevo.setSiguiente(nodoAuxiliar.getSiguiente());
+                                nodoAuxiliar.setSiguiente(nodoNuevo);
+                                nodoAuxiliar.getSiguiente().setAnterior(nodoNuevo);
+                                nodoAuxiliar = ultimo;
+                            } else {
+                                nodoAuxiliar = nodoAuxiliar.getSiguiente();
+                            }
                         }
                     }
                 }
             }
         }
+        
+        return agregado;
     }
     
     public String toString() {
@@ -72,7 +95,7 @@ public class Lista
         String hilera = "";
         
         while (nodoAuxiliar != null) {
-            hilera += nodoAuxiliar.getPersona().toString();
+            hilera += nodoAuxiliar.getPersona().toString() + "\n";
             nodoAuxiliar = nodoAuxiliar.getSiguiente();
         }
         
